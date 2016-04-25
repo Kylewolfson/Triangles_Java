@@ -23,4 +23,9 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2,3,4);
     assertEquals(true, testTriangle.isScalene());
   }
+  @Test
+  public void newTriangle_notAShape() {
+    Triangle testTriangle = new Triangle(8,4,5);
+    assertEquals(false, testTriangle.isTriangle());
+  }
 }

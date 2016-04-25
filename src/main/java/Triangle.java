@@ -18,5 +18,8 @@ public class Triangle {
   public boolean isScalene() {
     return (mLength1 != mLength2 && mLength1 != mLength3 && mLength2 != mLength3);
   }
+  public boolean isTriangle() {
+    return (mLength1 + mLength2 < mLength3 || mLength2 + mLength3 < mLength1 || mLength1 + mLength3 < mLength2);
+  }
 
 }
