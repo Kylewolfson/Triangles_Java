@@ -1,0 +1,15 @@
+<p><h3>Your triangle's side length is $myTriangle.getLength1()</h3></p>
+<p><h3>Your triangle's side length is $myTriangle.getLength2()</h3></p>
+<p><h3>Your triangle's side length is $myTriangle.getLength3()</h3></p>
+
+#if ($myTriangle.isEquilateral())
+  <p><h3>Your triangle is equilateral!</h3></p>
+#elseif ($myTriangle.isIso())
+  <p><h3>Your triangle is isoceles!</h3></p>
+#elseif ($myTriangle.isScalene())
+  <p><h3>Your triangle is scalene!</h3></p>
+#elseif (!$myTriangle.isTriangle())
+  <p><h3>Your triangle is not actually a triangle! Try different lengths</h3></p>
+#else
+  <p><h3>We screwed up our logic!</h3></p>
+#end
