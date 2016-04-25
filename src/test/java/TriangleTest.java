@@ -18,4 +18,9 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2,3,2);
     assertEquals(true, testTriangle.isIso());
   }
+  @Test
+  public void newTriangle_isScalene() {
+    Triangle testTriangle = new Triangle(2,3,4);
+    assertEquals(true, testTriangle.isScalene());
+  }
 }

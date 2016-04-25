@@ -15,4 +15,8 @@ public class Triangle {
   public boolean isIso() {
     return ((mLength1 == mLength2 || mLength2 == mLength3 || mLength1 == mLength3) && !isEquilateral());
   }
+  public boolean isScalene() {
+    return (mLength1 != mLength2 && mLength1 != mLength3 && mLength2 != mLength3);
+  }
+
 }
